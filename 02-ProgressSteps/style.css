@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url('bbblurry.svg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: aliceblue;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.progress_container{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* ----------- progressbar ---------- */
+
+
+
+.progress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+
+    justify-content: space-between;
+    position: relative;
+}
+
+.barra_gris{
+    height: 5px;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    position: absolute;
+    background-color: #E0E0E0;
+}
+
+.barra{
+    height: 5px;
+    /*width: 10px;*/
+    background-color: #03A9F4;
+    width: 0;
+    position: absolute;
+    max-width: 500px;
+    z-index: 2;
+    transition: all ease 0.5s;
+}
+
+.numero{
+    z-index: 3;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #E0E0E0;
+    color: #9E9E9E;
+}
+
+.numero.active{
+    border: 3px solid #03A9F4;
+    transition: all ease 0.5s;
+}
+
+/* ------------- button ------------- */
+
+.button_containter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #E0E0E0;
+    border: 0px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.button.active{
+    background-color: #03A9F4;
+}
+
+.button.active:hover{
+    cursor: pointer;
+    background-color: #03a8f4bd;
+}
+
+.button.disabled:hover{
+    cursor:not-allowed;
+}
