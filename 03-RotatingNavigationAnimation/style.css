@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #333333;
+    display: flex;
+}
+
+.contenedor{
+    z-index: 1;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+}
+
+.rotado{
+    transform: rotate(-20deg);
+}
+
+
+/* -------------- menu -------------- */
+
+.circulo_container{
+    position: fixed;
+    left: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: coral;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    transform-origin: center;
+    transition: transform 0.5s linear;
+    gap: 1.8rem;
+}
+
+.circulo_rotado{
+    transform: rotate(-60deg);
+}
+
+.material-symbols-outlined{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+/* ---------- text content ---------- */
+
+main{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    gap: 1rem;
+    padding: 10rem 1rem 3rem 1rem;
+
+}
+
+h1{
+    color: #222222;
+}
+
+small{
+    font-style: italic;
+    color: #444444;
+}
+
+p{
+    color: #333333;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* ------------ navegador ----------- */
+
+nav{
+    z-index: 2;
+    position: fixed;
+    bottom: 50px;
+
+}
+
+ul .material-symbols-outlined{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5rem;
+    transform: translateX(-150%);
+    transition: transform 0.5s linear;
+}
+
+.menu_activo{
+    transform: translateX(0%);
+}
+
+ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+nav ul li + li{
+    margin-left: 20px;
+}
+
+nav ul li + li + li{
+    margin-left: 40px;
+}
+
+.menu_item:hover{
+    cursor: pointer;
+    color: coral;
+}
+
+.menu_item:hover>span{
+    cursor: pointer;
+    color: coral;
+}

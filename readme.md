@@ -7,6 +7,7 @@
 **50 Projects in 50 Days**
 ***HTML - CSS - JAVASCRIPT***
 
+[Ver demo 👀](https://gabrielteresczuk.github.io/50Proyects50Days/)
 
 ## Descripción 📑
 
@@ -53,8 +54,17 @@ Sin separar el punto y sin :active
 SELECTOR.classList.add('active');
 SELECTOR.classList.remove('active');
 ```
+4 - escala de negros
+```css
+.black1{color:#111111}
+.black2{color:#222222}
+.black3{color:#333333}
+```
 
-
+5 - el origen de donde comenzara la transformacion
+```css
+transform-origin: top left;
+```
 
 ## Autor 😎
 
