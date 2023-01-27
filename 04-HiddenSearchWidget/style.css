@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #444;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #dedede;
+    padding: 10px;
+    border-radius: 10px;
+    /*gap: 0.5rem;*/
+}
+
+.search{
+    border: 0px;
+    background-color: #dedede;
+    color:#FF6A88 ;
+    width: 0px;
+    /*display: none;*/
+    transition: all ease 1s;
+}
+.activo{
+    /*display: block;*/
+    width: 200px;
+}
+
+.search:active{
+    border: 0px;
+    outline: none;
+}
+.search:focus{
+    border: 0px;
+    outline: none;
+}
+
+form span{
+    color: #FF6A88;
+}
+
+form span:hover{
+    cursor: pointer;
+    color: #FF99AC;
+}
