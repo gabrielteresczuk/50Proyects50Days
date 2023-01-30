@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    background-image: url('https://images.pexels.com/photos/1374067/pexels-photo-1374067.jpeg?auto=compress&cs=tinysrgb&w=1920&h=2560&dpr=1');
+    backdrop-filter: blur(5px);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 3rem;
+    color: #333333;
+}
+
+.contenido{
+    background-color: #3B71CA;
+    color: #fafafa;
+    padding: 5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.contenido:nth-of-type(even) {
+    transform: translateX(-400%);
+  }
+
+  .contenido.show {
+    transform: translateX(0);
+  }  
