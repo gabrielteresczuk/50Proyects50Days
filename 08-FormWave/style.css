@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #1A237E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+main{
+    background-color: #5C6BC0;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 300px;
+}
+
+h1{
+    color: white;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    color: white;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.input{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 5px;
+    caret-color: white;
+    color: white;
+    font-size: 1rem;
+}
+
+.label span{
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/*.campo:hover>.label span{
+    transform: translateY(-18px);
+}*/
+
+.input:focus + .label span{
+    transform: translateY(-18px);
+}
+
+.btn{
+    padding: 1rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    border: 0px;
+    background-color: #E8EAF6;
+    color: #1A237E;
+}
+
+.btn:hover{
+    background-color: #ced4fa;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #0022ff;
+}
+

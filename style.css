@@ -8,7 +8,8 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
     /*background-image: url("img/bg.jpg");*/
@@ -107,4 +108,8 @@ section{
 
 .card_a:hover{
     background-color: #B39DDB;
+}
+
+.card_a:active{
+    transform: scale(0.95);
 }

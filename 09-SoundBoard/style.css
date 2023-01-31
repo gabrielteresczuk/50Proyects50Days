@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #54B4D3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Kanit', sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    color: #fafafa;
+    font-weight: 200;
+    text-align: center;
+}
+
+.botones_cont{
+    padding-top: 2rem;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0px;
+    color: #fff;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}

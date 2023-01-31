@@ -66,6 +66,70 @@ SELECTOR.classList.remove('active');
 transform-origin: top left;
 ```
 
+6 - filtros de backdrop, para imagenes de background
+```css
+backdrop-filter: blur(40px);
+```
+
+7 - style de javascript
+```js
+SELECTOR.style.opacity = blur/100;
+```
+
+8 - metodo const boxTop = box.getBoundingClientRect().top
+```js
+box.getBoundingClientRect()
+//nos devuelve la posicion del objeto en el window
+```
+
+9 - creacion de una capa de color, sobre el background
+```css
+.SELECTOR::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+}
+```
+
+10 - separar una palabra en letras
+```js
+    .split('')
+    .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+    .join('')
+```
+
+11 - boton activo, da la sensasion de pulso
+```css
+.btn:active{
+    transform: scale(0.95);
+}
+```
+
+12 - play de sonido, y diversos metodos y propiedades
+```js
+    let sonido = document.getElementById(sound);
+    sonido.play();
+    sonido.pause()
+    sonido.currentTime = 0;
+```
+
+13 - multisombra
+```css
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+```
+
+14 - enpoint con varios tipos de header
+```js
+    //especificar el tipo de header, para la respuesta deseada.
+    const config = {
+        headers: {
+          Accept: 'application/json',
+        },
+      }
+```
+
 ## Autor 😎
 
 - Linkedin - [in/gabriel-teresczuk](https://www.linkedin.com/in/gabriel-teresczuk/)
