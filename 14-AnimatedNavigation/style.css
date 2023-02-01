@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff1ea;
+  background-image: linear-gradient(
+    to bottom,
+    #fff1ea 0%,
+    #fff1ea 50%,
+    coral 50%,
+    coral 100%
+  );
+}
+
+/*empieza con un ancho de 80px, CERRADO*/
+nav {
+  background-color: #fff;
+  padding: 20px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.6s linear; /*-> neceista tener ancho en PX*/
+  overflow-x: hidden;
+}
+
+/*Al activarse, se enzancha y ANIMA, sino no ANIMA*/
+nav.active {
+  width: 350px;
+}
+
+/*comienza con un width de 0*/
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.6s linear;
+  gap: 1rem;
+}
+
+nav.active ul {
+  width: 100%;
+}
+
+nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+nav.active ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+a:hover {
+  color: coral;
+}
+
+/*SI o SI relativo, alto y anchos marcados*/
+.icon {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.icon:focus {
+  outline: 0;
+}
+
+/*se crea una linea para la clase LINE, siempre ABSOLUTE*/
+.icon .line {
+  background-color: coral;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+
+nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-5.5px);
+}
