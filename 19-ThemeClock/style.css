@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    transition: ease 0.5s;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.dark h1{
+    color: #fafafa;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 10px;
+    font-size: 1rem;
+    width: 150px;
+    transition: ease 0.5s;
+}
+
+.dark button{
+    background-color: #fafafa;
+    color: #111;
+}
+
+button:hover{
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+.dark button:hover{
+    background-color: #111;
+    color: #fafafa;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.icono{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.reloj{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.hora{
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+/* -------------- reloj ------------- */
+
+.aguja {
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    top: 50%;
+    background-color: #000;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+.dark .aguja{
+    background-color: #fafafa;
+}
+
+.aguja.hora{
+    transform: translate(-50%, -100%) rotate(0deg);
+    transition: ease 0.5s;
+}
+
+.aguja.minuto{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    transition: ease 0.5s;
+}
+
+.aguja.segundo{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: #e74c3c;
+    transition: ease 0.5s;
+}
+
+.centro{
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+
+.centro::after {
+    content: '';
+    background-color: #000;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  .dark .centro::after{
+    background-color: #fafafa;
+}
+
+
+/* ---------- fecha y hora ---------- */
+
+.fecha_hora{
+    display: flex;
+    flex-direction: column;
+}
+
+.dark .hora{
+    color: #fafafa;
+}
+
+.fecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 200;
+    gap: 1rem;
+    text-transform:uppercase;
+}
+
+.dark .fecha{
+    color: #fafafa;
+}
+
+.fecha b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+}
+
+.dark .fecha b{
+    background-color: #fafafa;
+    color: #111;
+}
+
+.dark{
+    background-color: #111;
+}
+

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #1A237E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------------- header ------------- */
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #303F9F;
+    justify-content: center;
+}
+
+.header_cont{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.logo b{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.logo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.search{
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #303F9F;
+    border: 2px solid #1A237E;
+    color: white;
+    outline: none;
+}
+
+.search:focus{
+    background-color:#1A237E ;
+}
+
+/* -------------- body -------------- */
+
+main{
+
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card{
+    background-color: #303F9F;
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.card_img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.card_nombre{
+    color: white;
+}
+
+.card_cal{
+    background-color:#1A237E;
+    padding: 3px;
+    border-radius: 2px;
+    color:darkgoldenrod;
+    font-weight: 900;
+}
+
+.card_desc{
+    background-color: white;
+    color: #222;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform ease 0.5s;
+
+    /*max-height: 200px;*/
+
+}
+
+.card_desc p{
+    overflow: hidden;
+    height: 200px;
+}
+
+.card:hover>.card_desc{
+    transform: translateY(0%);
+}

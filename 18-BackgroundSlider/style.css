@@ -1,0 +1,85 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.739);
+    z-index: -1;
+}
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    
+}
+
+main img{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.739);
+    overflow: hidden;
+    transition: 0.4s ease;
+
+}
+
+.prueba{
+    opacity: 0;
+}
+
+.btn   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn:active{
+    transform: scale(0.99);
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.216);
+    cursor: pointer;
+}
+
+.icono{
+    font-size: 3rem;
+    color: white;
+}

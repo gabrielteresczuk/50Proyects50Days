@@ -36,10 +36,14 @@ h1{
     font-size: 5rem;
     font-weight: 700;
     text-align: center;
+    color: #fafafa;
+    text-shadow: 0 3px 6px rgba(0,0,0, 0.2);
 }
 
 .texto{
     text-align: center;
+    color: #222;
+
 }
 
 section{
@@ -93,6 +97,11 @@ section{
     font-weight: 600;
 }
 
+.card_titulo b{
+    font-weight: 800;
+    color: coral;
+}
+
 .card_a{
     background-color: #EEEEEE;
     display: flex;
@@ -107,7 +116,7 @@ section{
 }
 
 .card_a:hover{
-    background-color: #B39DDB;
+    background-color: rgba(255,206,134,1);
 }
 
 .card_a:active{

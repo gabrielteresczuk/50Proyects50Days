@@ -130,6 +130,30 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
       }
 ```
 
+15 - crear una linea con CSS
+```html
+<div class="line line1"></div>
+```
+este lo podes rotar o hacer lo que quieras
+```css
+.icon .line {
+  background-color: coral;
+  height: 2px;
+  width: 20px;
+  position: absolute; /*si o si*/
+  top: 10px;
+  left: 5px;
+}
+```
+
+16 - cambio de tema con root
+```css
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+```
+
 ## Autor 😎
 
 - Linkedin - [in/gabriel-teresczuk](https://www.linkedin.com/in/gabriel-teresczuk/)
