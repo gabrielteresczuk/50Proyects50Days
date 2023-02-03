@@ -1,0 +1,48 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+button{
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: slateblue;
+    border: 1px solid slateblue;
+    color: white;    
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    
+}
+
+.prueba2{
+    animation: prueba 0.4s ease-out;
+}
+
+@keyframes prueba {
+    to{
+        background-color: white;
+        transform: scale(280);
+        opacity: 0;
+    }
+}

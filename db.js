@@ -113,4 +113,35 @@ const db = [
         video:'19.gif',
         link:'./19-ThemeClock/index.html'
     },
+    {
+        nombre:'Button Ripple Effect',
+        imagen:'20.png',
+        video:'20.gif',
+        link:'./20-ButtonRippleEffect/index.html'
+    },
+    {
+        nombre:'Drag N Drop',
+        imagen:'21.png',
+        video:'21.gif',
+        link:'./21-DragNDrop/index.html'
+    },
+    {
+        nombre:'Drawing App',
+        imagen:'22.png',
+        video:'22.gif',
+        link:'./22-DrawingApp/index.html'
+    },
+    {
+        nombre:'Kinetic Loader',
+        imagen:'23.png',
+        video:'23.gif',
+        link:'./23-KineticLoader/index.html'
+    },
+    {
+        nombre:'Content Placeholder',
+        imagen:'24.png',
+        video:'24.gif',
+        link:'./24-ContentPlaceholder/index.html'
+    },
+
 ]

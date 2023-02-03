@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #6200EA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.kinetic{
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+}
+
+.triangulo{
+    position: absolute;
+    border: 50px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.t1{
+    transform-origin:center;
+    /*transform: rotate(180deg);*/
+    animation: rotate1 2s linear infinite 0.5s;
+    transition: ease 0.5s;
+}
+.t2{
+    transform-origin:center;
+    transform: rotate(270deg);
+    animation: rotate2 2s linear infinite ;
+    transition: ease 0.5s;
+}
+
+@keyframes rotate1{
+    0%,25%{
+        transform: rotate(0deg);
+    }
+    50%,75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2{
+    0%,25%{
+        transform: rotate(90deg);
+    }
+    50%,75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(450deg);
+    }
+}
+

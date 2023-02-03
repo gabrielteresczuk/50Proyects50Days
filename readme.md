@@ -154,6 +154,19 @@ html.dark {
 }
 ```
 
+17 - drag and drop
+```html
+<img draggable="true">
+```
+```js
+vacio.addEventListener('dragstart',()=>{});
+vacio.addEventListener('dragover',()=>{});
+vacio.addEventListener('dragenter',()=>{});
+vacio.addEventListener('dragleave',()=>{});
+vacio.addEventListener('drop',()=>{});
+```
+
+
 ## Autor 😎
 
 - Linkedin - [in/gabriel-teresczuk](https://www.linkedin.com/in/gabriel-teresczuk/)
