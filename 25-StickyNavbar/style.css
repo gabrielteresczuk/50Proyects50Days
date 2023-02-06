@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------- navbar ------------- */
+
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    transition: all ease 0.5s;
+}
+
+.nav_contenedor{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+
+}
+.logo a:hover{
+    color: orangered;
+    transition: color ease 0.5s;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    color: orangered;
+    transition: color ease 0.4s;
+}
+
+.navactive{
+    background-color: rgba(0, 0, 0, 0.431);
+    color: #fafafa;
+}
+
+.navactive .logo a{
+    color: #fafafa;
+}
+
+/* -------------- hero -------------- */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    position: relative;
+}   
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.hero h1{
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------ contenido ----------- */
+
+.contenido{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.seccion{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

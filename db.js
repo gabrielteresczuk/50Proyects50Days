@@ -143,5 +143,24 @@ const db = [
         video:'24.gif',
         link:'./24-ContentPlaceholder/index.html'
     },
+    {
+        nombre:'Sticky Navbar',
+        imagen:'25.png',
+        video:'25.gif',
+        link:'./25-StickyNavbar/index.html'
+    },
+    {
+        nombre:'Double Vertical Slider',
+        imagen:'26.png',
+        video:'26.gif',
+        link:'./26-DoubleVerticalSlider/index.html'
+    },
+    {
+        nombre:'Toast Notification',
+        imagen:'27.png',
+        video:'27.gif',
+        link:'./27-ToastNotification/index.html'
+    },
+
 
 ]

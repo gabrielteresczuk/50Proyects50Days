@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.cont_slider{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* ------------ izquierda ----------- */
+
+.cont_izq{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.texto_izq{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ------------- derecha ------------ */
+
+.cont_dcha{
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.img_dcha{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* -------------- btns -------------- */
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+}
+
+.btn_izq{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #777;
+    color: #777;
+    transition: all ease 0.5s;
+}
+
+.btn_izq:hover{
+    color: #111;
+    cursor: pointer;
+}
+
+.btn_dcha{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #777;
+    color: #777;
+}
+
+.btn_dcha:hover{
+    color: #111;
+    cursor: pointer;
+}
