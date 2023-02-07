@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(218,29,250);
+    background: radial-gradient(circle, rgba(218,29,250,1) 0%, rgba(170,0,255,1) 68%);
+}
+
+main{
+    background-color: #fafafa;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.p_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.password{
+    width: 100%;
+}
+
+.copiar{
+    color: #878787;
+}
+
+.copiar:hover{
+    cursor: pointer;
+    color: rgba(217, 29, 250, 0.601);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.enviar{
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.enviar:hover{
+    background-color: rgba(217, 29, 250, 0.601);
+    cursor: pointer;
+}

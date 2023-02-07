@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="keywords"
+          content="HTML, CSS, JavaScript, React js, fullstack, FrontEnd, full stack, front end, 50Projects50Days"
+        />
+        <meta name="author" content="Teresczuk Gabriel" />
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>👌</text></svg>"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Password Generator</title>
+    </head>
+<body>
+
+    <main>
+        <h1>Password Generator</h1>
+        <div class="p_container">
+            <div id="password" class="password">password...</div>
+            <span class="material-symbols-outlined copiar"  id="copiar">
+                content_paste
+            </span>
+        </div>
+        <form action="" id="form">
+            <div class="campo">
+                <label for="numero">Cantidad de caracteres</label>
+                <input type="number" name="numero" id="numero" value="20" min="6" max="20">
+            </div>
+            <div class="campo">
+                <label for="mayus">Incluir Mayusculas</label>
+                <input type="checkbox" name="mayus" id="mayus" checked>
+            </div>
+            <div class="campo">
+                <label for="minus">Incluir Minusculas</label>
+                <input type="checkbox" name="minus" id="minus" checked>
+            </div>
+            <div class="campo">
+                <label for="numeros">Incluir Numeros</label>
+                <input type="checkbox" name="numeros" id="numeros" checked>
+            </div>
+            <div class="campo">
+                <label for="simbolos">Incluir Simbolos</label>
+                <input type="checkbox" name="simbolos" id="simbolos" checked>
+            </div>
+
+            <input type="submit" class="enviar" value="Generar password">
+        </form>
+    </main>
+    
+</body>
+</html>
+
+<script src="main.js"></script>
