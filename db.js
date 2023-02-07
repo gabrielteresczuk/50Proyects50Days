@@ -174,10 +174,16 @@ const db = [
         link:'.29-DoubleClickHeart/index.html'
     },
     {
-        nombre:'30-AutoTextEffect',
+        nombre:'Auto Text Effect',
         imagen:'30.png',
         video:'30.gif',
         link:'.30-AutoTextEffect/index.html'
+    },
+    {
+        nombre:'Password Generator',
+        imagen:'31.png',
+        video:'31.gif',
+        link:'.31-PasswordGenerator/index.html'
     },
 
 
