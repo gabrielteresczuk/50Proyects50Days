@@ -173,6 +173,12 @@ const db = [
         video:'29.gif',
         link:'.29-DoubleClickHeart/index.html'
     },
+    {
+        nombre:'30-AutoTextEffect',
+        imagen:'30.png',
+        video:'30.gif',
+        link:'.30-AutoTextEffect/index.html'
+    },
 
 
 ]
