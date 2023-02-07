@@ -165,25 +165,25 @@ const db = [
         nombre:'Github Profile',
         imagen:'28.png',
         video:'28.gif',
-        link:'.28-GithubProfiles/index.html'
+        link:'./28-GithubProfiles/index.html'
     },
     {
         nombre:'Double Click Heart',
         imagen:'29.png',
         video:'29.gif',
-        link:'.29-DoubleClickHeart/index.html'
+        link:'./29-DoubleClickHeart/index.html'
     },
     {
         nombre:'Auto Text Effect',
         imagen:'30.png',
         video:'30.gif',
-        link:'.30-AutoTextEffect/index.html'
+        link:'./30-AutoTextEffect/index.html'
     },
     {
         nombre:'Password Generator',
         imagen:'31.png',
         video:'31.gif',
-        link:'.31-PasswordGenerator/index.html'
+        link:'./31-PasswordGenerator/index.html'
     },
 
 
