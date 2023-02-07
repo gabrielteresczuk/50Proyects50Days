@@ -162,10 +162,16 @@ const db = [
         link:'./27-ToastNotification/index.html'
     },
     {
-        nombre:'Toast Notification',
+        nombre:'Github Profile',
         imagen:'28.png',
         video:'28.gif',
         link:'.28-GithubProfiles/index.html'
+    },
+    {
+        nombre:'Double Click Heart',
+        imagen:'29.png',
+        video:'29.gif',
+        link:'.29-DoubleClickHeart/index.html'
     },
 
 
