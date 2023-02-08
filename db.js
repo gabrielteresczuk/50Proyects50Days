@@ -185,6 +185,12 @@ const db = [
         video:'31.gif',
         link:'./31-PasswordGenerator/index.html'
     },
+    {
+        nombre:'Good Cheap Fast',
+        imagen:'32.png',
+        video:'32.gif',
+        link:'./32-GoodCheapFast/index.html'
+    },
 
 
 ]
