@@ -197,6 +197,12 @@ const db = [
         video:'33.gif',
         link:'./33-NotesApp/index.html'
     },
+    {
+        nombre:'NotesApp',
+        imagen:'34.png',
+        video:'34.gif',
+        link:'./34-AnimatedCoutdown/index.html'
+    },
 
 
 ]
