@@ -198,10 +198,16 @@ const db = [
         link:'./33-NotesApp/index.html'
     },
     {
-        nombre:'NotesApp',
+        nombre:'Animation Countdown',
         imagen:'34.png',
         video:'34.gif',
         link:'./34-AnimatedCoutdown/index.html'
+    },
+    {
+        nombre:'Image Carousel',
+        imagen:'35.png',
+        video:'35.gif',
+        link:'./35-ImageCarousel/index.html'
     },
 
 
