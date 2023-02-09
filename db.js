@@ -209,6 +209,12 @@ const db = [
         video:'35.gif',
         link:'./35-ImageCarousel/index.html'
     },
+    {
+        nombre:'Hover Board',
+        imagen:'36.png',
+        video:'36.gif',
+        link:'./36-HoverBoard/index.html'
+    },
 
 
 ]
