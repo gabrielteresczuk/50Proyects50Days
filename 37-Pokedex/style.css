@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(270deg, #ff3333, #ff6b6b);
+    background-size: 400% 400%;
+
+    animation: AnimationName 30s ease infinite;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+}
+
+.container{
+    
+    width: 100%;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    width: 150px;
+    height: 250px;
+    background-color: #f78585;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.img {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.descr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.numero{
+    background-color: #eeeeee85;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: 0.9rem;
+}
+
+
+.nombre{
+    font-weight: 600;
+}
+
+
+
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

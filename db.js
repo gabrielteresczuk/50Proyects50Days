@@ -215,6 +215,12 @@ const db = [
         video:'36.gif',
         link:'./36-HoverBoard/index.html'
     },
+    {
+        nombre:'Pokedex',
+        imagen:'37.png',
+        video:'37.gif',
+        link:'./37-Pokedex/index.html'
+    },
 
 
 ]
