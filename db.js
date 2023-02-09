@@ -221,6 +221,18 @@ const db = [
         video:'37.gif',
         link:'./37-Pokedex/index.html'
     },
+    {
+        nombre:'Mobile Tab',
+        imagen:'38.png',
+        video:'38.gif',
+        link:'./38-MobileTabNavigation/index.html'
+    },
+    {
+        nombre:'Pass Str Background',
+        imagen:'39.png',
+        video:'39.gif',
+        link:'./39-PasswordStrengthBackground/index.html'
+    },
 
 
 ]
