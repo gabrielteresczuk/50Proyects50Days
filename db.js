@@ -233,6 +233,13 @@ const db = [
         video:'39.gif',
         link:'./39-PasswordStrengthBackground/index.html'
     },
+    {
+        nombre:'3d Background Boxes',
+        imagen:'40.png',
+        video:'40.gif',
+        link:'./40-3dBackgroundBoxes/index.html'
+    },
+
 
 
 ]

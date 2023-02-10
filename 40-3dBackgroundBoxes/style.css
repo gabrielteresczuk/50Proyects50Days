@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+
+.magic {
+    background-color: #1B5E20;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 200px;
+    top: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px #4CAF50;
+    z-index: 100;
+  }
+  
+  .magic:focus {
+    outline: none;
+  }
+  
+  .magic:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+  
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    transition: 0.4s ease;
+  }
+  
+  .boxes.big {
+    width: 600px;
+    height: 600px;
+  }
+  
+  .boxes.big .box {
+    transform: rotateZ(360deg);
+  }
+  
+  .box {
+    background-image: url('homer.gif');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
+    height: 125px;
+    width: 125px;
+    transition: 0.4s ease;
+  }
+  
+  .box::after {
+    content: '';
+    background-color: #4CAF50;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+  }
+  
+  .box::before {
+    content: '';
+    background-color: #1B5E20;
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    height: 15px;
+    width: 100%;
+    transform: skewX(45deg);
+  }
+
