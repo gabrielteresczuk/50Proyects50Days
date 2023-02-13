@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    gap: 1rem;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.icon{
+    font-size: 4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.active{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    color: #E65100;
+}
+
+button{
+    background-color: #424242;
+    color: #fafafa;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    transition: all ease 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #000;
+    
+}
+
+
+.corazon{
+    font-size: 3rem;
+    color: red;
+
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+
+}
+
+b{
+    font-size: 1.5rem;
+}
+
+.saludo{
+    font-size: 1rem;
+    color: #181818;
+    font-weight: 600;
+}
+
+.info{
+    color: #000000;
+    font-weight: 400;
+}

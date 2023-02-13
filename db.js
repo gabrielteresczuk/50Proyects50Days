@@ -251,6 +251,13 @@ const db = [
         video:'42.gif',
         link:'./42-LiveUserFilter/index.html'
     },
+    {
+        nombre:'Feedback Ui Design',
+        imagen:'43.png',
+        video:'43.gif',
+        link:'./43-FeedbackUiDesign/index.html'
+    },
+
 
 
 
