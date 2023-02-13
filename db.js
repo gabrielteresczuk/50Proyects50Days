@@ -239,6 +239,12 @@ const db = [
         video:'40.gif',
         link:'./40-3dBackgroundBoxes/index.html'
     },
+    {
+        nombre:'Verify Account Ui',
+        imagen:'41.png',
+        video:'41.gif',
+        link:'./41-VerifyAccountUi/index.html'
+    },
 
 
 
