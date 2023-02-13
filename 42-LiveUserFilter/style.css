@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #fafafa;
+
+    overflow: hidden;
+    height: 600px;
+    width: 400px;
+}
+
+.header{
+    background: rgb(26,35,126);
+    background: linear-gradient(145deg, rgba(26,35,126,1) 0%, rgba(49,27,146,1) 68%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.header h1{
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header h1 span{
+    font-size: 3rem;
+}
+
+
+.header p{
+    color: #ccc;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.search{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contenedor{
+    /*padding: 1rem;*/
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.datos h3{
+    color: #111;
+}
+
+.datos small{
+    color: #777;
+}
+
+.loader_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-loader {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:conic-gradient(#0000 10%,#766DF4);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+  }
+  @keyframes s3 {to{transform: rotate(1turn)}}
