@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+h1{
+    font-family: 'Julee', cursive;
+    font-size: 3rem;
+    color: #0091EA;
+}
+
+.contenedor{
+    position: relative;
+}
+
+.range{
+    width: 300px;
+}
+
+
+.range_label{
+    background-color: #fff;
+    position: absolute;
+    top: -40px;
+    left: 110px;
+    width: 80px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
