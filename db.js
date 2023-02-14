@@ -269,6 +269,12 @@ const db = [
         video:'45.gif',
         link:'./45-NetflixMobileNavigation/index.html'
     },
+    {
+        nombre:'Quiz App',
+        imagen:'46.png',
+        video:'46.gif',
+        link:'./46-QuizApp/index.html'
+    },
 
 
 
