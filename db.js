@@ -257,6 +257,18 @@ const db = [
         video:'43.gif',
         link:'./43-FeedbackUiDesign/index.html'
     },
+    {
+        nombre:'Custom Range Slider',
+        imagen:'44.png',
+        video:'44.gif',
+        link:'./44-CustomRangeSlider/index.html'
+    },
+    {
+        nombre:'Netflix Navigation',
+        imagen:'45.png',
+        video:'45.gif',
+        link:'./45-NetflixMobileNavigation/index.html'
+    },
 
 
 
