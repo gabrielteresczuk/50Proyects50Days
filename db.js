@@ -275,6 +275,12 @@ const db = [
         video:'46.gif',
         link:'./46-QuizApp/index.html'
     },
+    {
+        nombre:'Testimonial Switcher',
+        imagen:'47.png',
+        video:'47.gif',
+        link:'./47-TestimonialBoxSwitcher/index.html'
+    },
 
 
 
