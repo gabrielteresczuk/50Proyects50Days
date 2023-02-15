@@ -281,6 +281,12 @@ const db = [
         video:'47.gif',
         link:'./47-TestimonialBoxSwitcher/index.html'
     },
+    {
+        nombre:'Random Image',
+        imagen:'48.png',
+        video:'48.gif',
+        link:'./48-RandomImageGenerator/index.html'
+    },
 
 
 
