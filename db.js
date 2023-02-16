@@ -284,8 +284,20 @@ const db = [
     {
         nombre:'Random Image',
         imagen:'48.png',
-        video:'48.gif',
+        video:'48.png',
         link:'./48-RandomImageGenerator/index.html'
+    },
+    {
+        nombre:'Todo List',
+        imagen:'49.png',
+        video:'49.gif',
+        link:'./49-TodoList/index.html'
+    },
+    {
+        nombre:'Insect Catch Game',
+        imagen:'50.png',
+        video:'50.gif',
+        link:'./50-InsectCatchGame/index.html'
     },
 
 
